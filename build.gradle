@@ -19,18 +19,18 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation 'org.postgresql:postgresql'
-    implementation 'javax.xml.bind:jaxb-api'
-    implementation 'com.sun.xml.bind:jaxb-core:4.0.1'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.7.5'
+    implementation 'org.springframework.boot:spring-boot-devtools:2.7.5'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.7.5'
+    implementation 'org.springframework.boot:spring-boot-starter-security:2.7.5'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf:2.7.5'
+    implementation 'org.springframework.session:spring-session-jdbc:2.7.0'
+    implementation 'org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.6.8'
+    implementation 'org.postgresql:postgresql:42.5.0'
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    implementation 'javax.xml.bind:jaxb-api:2.4.0-b180830.0359'
     implementation 'com.sun.xml.bind:jaxb-impl:4.0.1'
-    compileOnly 'org.projectlombok:lombok'
-    compileOnly 'org.springframework.boot:spring-boot-starter-security'
-    compileOnly 'org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.1.7.RELEASE'
-    developmentOnly 'org.springframework.boot:spring-boot-devtools'
-    annotationProcessor 'org.projectlombok:lombok'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.7.5'
 }
 
 tasks.named('test') {
